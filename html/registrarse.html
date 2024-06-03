@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro | CACelectrodomesticos</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="estilos-registro.css">
+    <title>Registro - CAC Electrodomésticos</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estilos-registro.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -13,15 +13,15 @@
 
 <body class="bodyRegistrarse">
     <header class="headerRegistrarse">
-        <a class="anclaLogo" href="index.html">
+        <a class="anclaLogo" href="../index.html">
             <i class="fas fa-film" aria-hidden="true"></i>
-            <span>CACelectrodomesticos</span>
+            <span>CAC Electrodomésticos</span>
         </a>
        
     </header>
     <main  id="main" class="main">
       <section  data-aos="zoom-in"  data-aos-duration="1000" class="seccionRegistrarse">
-        <form  action="" method="post">
+        <form  id = "formulario" action="" method="post">
             <h2 class="tituloRegistrarse">Registro</h2>
             <div>
                 <input type="text" placeholder="Nombre" required id="nombre" name="nombre">
@@ -33,7 +33,7 @@
                 <input type="email" placeholder="Email" required id="email" name="email">
             </div>
             <div>
-                <input type="password" placeholder="Contraseña" required id="password" name="password">
+                <input type="password" placeholder="Contraseña" required id="contrasenia" name="password">
             </div>
             <div>
                 <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" required id="fechaNacimiento" name="fechaNacimiento">
@@ -58,7 +58,7 @@
                 <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
             </div>
             <div>
-                <input  class="boton" type="submit" value="Registrarse">
+                <input class="boton" type="submit" value="Registrarse">
             </div>
            
             <div > 
@@ -69,8 +69,7 @@
 
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
+    <script>AOS.init();</script>
+    <script src="../scripts/registro.js"></script>
 </body>
 </html>

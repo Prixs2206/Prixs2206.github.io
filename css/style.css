@@ -2,7 +2,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto; 
     max-width: 1300px;
-    background: linear-gradient(#888888, #FEFEFE);
 }
 
 .caja{
@@ -85,6 +84,10 @@ nav a:hover{
 
 .productos{
     width: 100%;
+    padding-top: 10px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .imagenPagProductos{
@@ -96,12 +99,20 @@ nav a:hover{
     background-color: #FFFFFF;
     display: inline-block;
     text-align: center;
-    width: 250px;
-    margin: 1% 1%;
-    padding: 10px 10px;
+    width: calc(25% - 2%);
+    margin: 0.5%;
+    padding: 10px;
     border: 2px solid #000000;
     border-radius: 10px;
-    margin-top: 148px; 
+    margin-top: 148px;
+}
+
+.productos li .producto-descripcion {
+    font-size: 20px;
+    height: 50px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
 }
 
 .productos li:hover{
@@ -141,7 +152,23 @@ nav a:hover{
 
 ul, li{
     display: inline;
-    margin: 0 60px 0 60px;    
+    margin: 0 1px 0 1px;    
+}
+
+.posBanner button {
+    background-color: transparent;
+    border: 2px solid #707070;
+    color: #0771e2;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.posBanner button:hover {
+    background-color: #0771e2; 
+    color: #fff; 
+    border-color: #707070; 
 }
 
 .listaPosBanner:hover{ 
@@ -177,7 +204,7 @@ ul, li{
     max-width: 400px; 
     margin: 0 auto;
     bottom: 14px; 
-    left: 5px;
+    left: -20px;
 }
   
 .search-input {
@@ -242,6 +269,7 @@ ul, li{
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
+    
 }
 
 .productosHome li:hover{
@@ -267,13 +295,15 @@ ul, li{
 }
 
 .productoHomeDescr{
-    font-size: 14px;
+    font-size: 13px;
+    text-overflow: ellipsis;
 }
 
 .productoHomePrecio{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     margin-top: 10px;
+    
 }
 
 .propaganda{
@@ -319,7 +349,7 @@ ul, li{
 
 footer{
     text-align: center;
-    background: url(imagenes/bg.jpg);
+    background: url(../imagenes/bg.jpg);
     padding: 40px;
 }
 
@@ -328,3 +358,12 @@ footer{
     font-size: 13px;
     margin:20px;
 }
+
+/* @media screen and (max-width: 480px) {
+    .caja, .search-button, .banner, .anteBanner, .posBanner, 
+        .opcionesPosBanner, .copyrightz, .copyright, .imaPropa, .productosHome  {
+        width: 480px;
+    }
+
+    .contenido-ZonaProductos, .imagenPagProductos, .
+} */
